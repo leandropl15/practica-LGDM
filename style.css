@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 500px;
+    display: flex;
+    justify-content: center ;
+    align-items:center ;
+    gap: 35px;
+    border: 2px solid ;
+    
+}
+
+.item_1{
+    color: aqua;
+    order: 2;
+    flex-basis: 200px;
+    align-self:baseline ;
+    font-size: 38px;
+    flex-grow: 2;
+}
+
+.item_2{
+    order: 3;
+    flex-grow: 1;
+
+}
+
+.item_3{
+    order: 1;
+    flex-grow: 2;
+}
