@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulario html">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>formulario practica</h1>
+
+    <form>
+        <h2>registrate</h2>
+        <hr>
+
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre" required autofocus autocomplete="name"><br><br>
+
+        <label for="correo electronico">Correo electronico:</label><br>
+        <input type="email" id="correo electronico" name="correo" placeholder="Escribe tu correo" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required autocomplete="email"><br><br>
+
+        <label for="password">Escribe una contrase;a:</label><br>
+        <input type="password" id="password" name="contrase;a" placeholder="Escribe la contrase;a" required autocomplete="new-password" maxlength="8"><br><br>
+
+        <label for="password2">Confirme la contrase;a:</label><br>
+        <input type="password" id="password2" name="confirmar contrase;a" placeholder="Repita la contrase;a" required autocomplete="new-password"><br><br>
+
+        <label for="telefono">Numero de telefono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Escriba su numero" ><br><br><!--autocomplete="tel" pattern="[0-9] {9}"  -->
+        
+        <label for="fecha de nacimiento">Fecha de nacimiento</label><br>
+        <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required><br><br>
+
+        <label for="paises">Elija un Pais:</label><br>
+        <select name="paises" id="paises" required>
+            <option value="" disabled selected>Elije un Pais</option>
+            <option value="Francia">Francia</option>
+            <option value="Estados unidos">Estados unidos</option>
+            <option value="Suiza">Suiza</option>
+            <option value="Republica Dominicana">Republica Dominicana</option>
+        </select><br><br>
+
+        <label for="Genero">Genero:</label><br>
+        <input type="radio" id="masculino" name="Genero" value="masculino" required>
+        <label for="masculino">masculino</label><br>
+        <input type="radio" id="femenino" name="Genero" value="femenino" required>
+        <label for="femenino">femenino</label><br><br>
+
+        <label for="color favorito">Elija un color</label><br>
+        <input type="color" id="color favorito" name="color favorito" required value="#125463"><br><br>
+
+        <label for="satisfaccion">Nivel de satisfaccion (0-10):</label><br>
+        <input type="number" id="satisfaccion" name="nivel de satisfaccion" required min="0" max="10" step="1"><br><br>
+
+       <!-- <label for="satisfaccion_1">Nivel de satisfaccion (0-10):</label><br>
+        <input type="range" id="satisfaccion_1" name="satisfaccion_1" required min="0" max="10" step="1"><br><br>-->
+
+        <!--<label for="satisfaccion_2">Elija su nivel de satisfaccion</label><br>
+        <select name="satisfaccion_2" id="satisfaccion_2">
+            <option value="" disabled selected>Elija su nivel de satisfaccion</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br><br>-->
+
+        <label for="foto de perfil">Subir foto de perfil:</label><br>
+        <input type="file" id="foto de perfil" name="foto de perfil" required><br><br>
+
+        <label for="aceptar terminos">Terminos y Condiciones.</label>
+        <input type="checkbox" id="aceptar terminos" name="terminos y Condiciones" value="si" required><br><br>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpiar">
+
+    </form>
+    
+</body>
+</html>
